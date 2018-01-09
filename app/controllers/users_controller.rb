@@ -11,9 +11,9 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
 
     if @user.save
-      redirect_to @user, notice: 'Пользователь был успешно создан.'
+      redirect_to @user, notice: 'User was successfully created'
     else
-      redirect_to new_user_path, alert: 'Пароль или логин неверен'
+      redirect_to new_user_path, alert: 'Password or login incorrect'
     end
   end
 

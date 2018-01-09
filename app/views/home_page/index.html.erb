@@ -4,43 +4,10 @@
       <div class="cental-text-top">Built for developers</div>
       <div class="central-text-bottom">
         <p>
-          GitHub is a development platform inspired by the way you work. From open source to business, you can host and review code,   manage projects, and build software alongside millions of other developers.
+          GitHub is a development platform inspired by the way you work. From open source to business, you can host and review code, manage projects, and build software alongside millions of other developers.
         </p>
       </div>
     </div>
-    <div class="input-form">
-      <div class="input-form-inner">
-        <%= form_tag controller: "users", action: "create" do %>
-          <% if flash[:alert].present? %>
-            <p class="alert alert-danger"><%= flash[:alert] %></p>
-          <% end %>
-
-          <div class="table-row">
-            <div class="table-cell name"><%= label_tag 'Username' %></div>
-          </div>
-          <div class="table-row">
-            <div class="table-cell"><%= text_field_tag :name %></div>
-          </div>
-
-          <div class="table-row">
-            <div class="table-cell name"><%= label_tag 'Email' %></div>
-          </div>
-          <div class="table-row">
-            <div class="table-cell"><%= email_field_tag :email %></div>
-          </div>
-
-          <div class="table-row">
-            <div class="table-cell name"><%= label_tag 'Password' %></div>
-          </div>
-          <div class="table-row">
-            <div class="table-cell"><%= password_field_tag :password %></div>
-          </div>
-
-          <div class="table-row">
-            <div class="table-cell"><%= submit_tag 'Sign up for GitClub', class: 'btn btn-primary' %></div>
-          </div>
-        <% end %>
-      </div>
-    </div>
+    <%= render partial: 'form' %>
   </div>
 </div>

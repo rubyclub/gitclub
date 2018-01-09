@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   resources :users
 
   root to: "home_page#index"
 
+  get '/pull_requests', to: 'pull_requests#index'
   get '/pulse', to: 'insights#pulse'
   get '/contributors', to: 'insights#contributors'
   get '/community', to: 'insights#community'

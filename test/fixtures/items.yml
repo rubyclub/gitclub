@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  branch: one
+  commit: one
+  name: MyString
+  location: MyString
+  file: false
+  folder: false
+
+two:
+  branch: two
+  commit: two
+  name: MyString
+  location: MyString
+  file: false
+  folder: false

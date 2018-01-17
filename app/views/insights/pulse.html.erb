@@ -1,0 +1,212 @@
+<div class="container new-discussion-timeline experiment-repo-nav">
+  <div class="repository-content">
+    <div class="columns">
+      <div class="column one-fourth">
+        <%= render partial: 'insights/menu' %>
+      </div>
+      <div class="column three-fourth">
+        <div class="Subhead">
+          <h2 class='Subhead-heading'>
+            "Date" of the first commit <span class="dash">-</span> Present "Date"
+          </h2>
+          <div class="Subhead-actions"></div>
+        </div>
+        <div class="Box">
+        <div class="Box-header">
+          <h3 class="Box-title">Overview</h3>
+        </div>
+        <ul>
+          <li class="Box-row p-0 d-flex">
+            <div class="flex-item-equal p-4">
+              <div class="d-table width-full bg-gray">
+                <a href="#" class="d-table-cell bg-purple pt-2" style="width:47.5%" aria-lable="View all merged pull requests"></a>
+                <a href="#" class="d-table-cell bg-green pt-2" style="width:52.5%" aria-label="View all open pull requests"></a>
+              </div>
+              <div class="mt-2">
+                <span class="text-emphasized">?</span> Active Pull Requests
+              </div>
+            </div>
+            <div class="flex-item-equal p-4">
+              <div class="d-table width-full bg-gray">
+                <a href="#" class="d-table-cell bg-red pt-2" style="width:52.777777778%" aria-label="View all closed issues"></a>
+                <a href="#" class="d-table-cell bg-green p2-2" style="width:47.2222222%" aria-label="View all open issues"></a>
+              </div>
+              <div class="mt-2">
+              <span class="text-emphasized">?</span> Active Issues
+              </div>
+            </div>
+          </li>
+          <li class="Box-row p-0">
+            <ul class="summary-stats">
+              <li>
+                <a href="#"><span class="num"><svg aria-hidden="true" class="octicon octicon-git-pull-request" height="16"
+                                               version="1.1" viewBox="0 0 12 16" width="12"></svg>?</span> Merged Pull Requests </a>
+              </li>
+              <li>
+                <a href="#"><span class="num"><svg aria-hidden="true" class="octicon octicon-git-pull-branch" height="16"
+                                               version="1.1" viewBox="0 0 10 16" width="10"></svg></svg>?</span>Proposed Pull Requests</a>
+              </li>
+              <li>
+                <a href="#"><span class="num"><svg aria-hidden="true" class="octicon octicon-issue-closed" height="16"
+                                               version="1.1" viewBox="0 0 16 16" width="16"></svg>?</span>Closed Issues</a>
+              </li>
+              <li>
+                <a href="#"><span class="num"><svg aria-hidden="true" class="octicon octicon-issue-opened" height="16"
+                                               version="1.1" viewBox="0 0 14 16" width="14"></svg>?</span>New Issues</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="authors-and-code">
+        <div class="section diffstat-summary v-aligin-top pt-3">
+          "Excluding merges, <strong>? authors</strong> have pushed <strong>? commits</strong> to staging and <strong>? commits</strong>
+          to all branches. On staging, <strong> ? files</strong> have changed and there have been <strong>? additions</strong> and <strong>
+          ? deletions</strong>."
+        </div>
+        <div class="section v-aligin-top pt-2">
+          <div class="js-graph graph-canvas pulse-authors-graph" data-graph-name="pulse-authors" data-url="#">
+            <img class="graph-loading dots" src="#" alt> Graphs
+          </div>
+        </div>
+      </div>
+      <div class="pulse-sections"> <!-- Go on from here -->
+        <div id="pull-requests" class="pulse-section">
+          <h3 class="conversation-list-heading" id="merged-pull-requests">
+            <span class="inner">
+              <svg aria-hidden="true" class="octicon octicon-git-pull-request" height="16" version="1.1" viewBox="0 0 12 16" width="12"></svg>
+                <span class="text-emphasized">?</span>
+              Pull requests merged by <span class="text-emphasized">?</span> people
+            </span>
+          </h3>
+          <ul class="simple-conversation-list varied-states">
+            <li>
+              <span class="State State--purple">Merged</span>
+              <span class="num">#1</span>
+              <a href="#" class="title"> merged info </a>
+            </li>
+            <li>
+              <span class="State State--purple">Merged</span>
+              <span class="num">#2</span>
+              <a href="#" class="title"> merged info </a>
+            </li>
+            <li>
+              <span class="State State--purple">Merged</span>
+              <span class="num">#3</span>
+              <a href="#" class="title"> merged info </a>
+            </li>
+          </ul>
+          <h3 class="conversation-list-heading" id="proposed-pull-requests">
+            <span class="inner">
+              <svg aria-hidden="true" class="octicon octicon-git-pulll-request" height="16" version="1.1"
+                   viewBox="0 0 12 16" width="12"> </svg>
+              <span class="text-emphasized">?</span>
+              Pull requests proposed by
+              <span class="text-emphasized">?</span> people
+            </span>
+          </h3>
+          <ul class="simple-conversation-list varied-states">
+            <li>
+              <span class="State State--green">Proposed</span>
+              <span class="num">#1</span>
+              <a href="#" class="title"> Proposed info </a>
+            </li>
+            <li>
+              <span class="State State--green">Proposed</span>
+              <span class="num">#2</span>
+              <a href="#" class="title"> Proposed info </a>
+            </li>
+            <li>
+              <span class="State State--green">Proposed</span>
+              <span class="num">#3</span>
+              <a href="#" class="title"> Proposed info </a>
+            </li>
+          </ul>
+        </div>
+        <div id="issues" class="pulse-section">
+          <h3 class="conversation-list-heading" id="closed-issues">
+            <span class="inner">
+              <svg aria-hidden="true" class="octicon octicon-issue-closed" height="16" version="1.1" viewBox="0 0 16 16" width="16"></svg>
+              <span class="text-emphasized">?</span>
+              Issues closed by <span class="text-emphasized">?</span> people
+            </span>
+          </h3>
+            <ul class="simple-conversation-list varied-states">
+            <li>
+              <span class="State State--red">Closed</span>
+              <span class="num">#1</span>
+              <a href="#" class="title"> Closed issue info </a>
+            </li>
+            <li>
+              <span class="State State--red">Closed</span>
+              <span class="num">#2</span>
+              <a href="#" class="title"> Closed issue info </a>
+            </li>
+            <li>
+              <span class="State State--red">Closed</span>
+              <span class="num">#3</span>
+              <a href="#" class="title"> Closed issue info </a>
+            </li>
+          </ul>
+          <h3 class="conversation-list-heading" id="new-issues">
+            <span class="inner">
+              <svg aria-hidden="true" class="octicon octicon-issues-opened" height="16" version="1.1"
+                   viewBox="0 0 14 16" width="14"> </svg>
+              <span class="text-emphasized">?</span>
+              Issues created by
+              <span class="text-emphasized">?</span> people
+            </span>
+          </h3>
+          <ul class="simple-conversation-list varied-states">
+            <li>
+              <span class="State State--green">Opened</span>
+              <span class="num">#1</span>
+              <a href="#" class="title"> Opened issue info </a>
+            </li>
+            <li>
+              <span class="State State--green">Opened</span>
+              <span class="num">#2</span>
+              <a href="#" class="title"> Opened issue info </a>
+            </li>
+            <li>
+              <span class="State State--green">Opened</span>
+              <span class="num">#3</span>
+              <a href="#" class="title"> Opened issue info </a>
+            </li>
+          </ul>
+        </div>
+        <div id="active_discussions" class="pulse-section">
+          <h3 class="conversation-list-heading">
+            <span class="inner">
+              <svg aria-hidden="true" class="octicon octicon-comment-discussion" height="16" version="1.1" viewBox="0 0 16 16" width="16"></svg>
+              <span class="text-emphasized">?</span>
+              Unresolved conversations
+            </span>
+          </h3>
+          <p>
+            Sometimes conversations happen on old items that aren`t yet closed.
+            Here is a list of all the Issues and Pull Requests
+            conversations.
+          </p>
+          <ul class="simple-conversation-list varied-states">
+            <li>
+              <span class="State State--green">Open</span>
+              <span class="num">#1</span>
+              <a href="#" class="title"> Open discussions info </a>
+            </li>
+            <li>
+              <span class="State State--green">Open</span>
+              <span class="num">#2</span>
+              <a href="#" class="title"> Open discussions info </a>
+            </li>
+            <li>
+              <span class="State State--green">Open</span>
+              <span class="num">#3</span>
+              <a href="#" class="title"> Open discussions info </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

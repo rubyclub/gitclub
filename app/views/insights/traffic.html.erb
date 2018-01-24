@@ -1,1 +1,131 @@
-<h1>Traffic</h1>
+<div class="container new-discussion-timeline experiment-repo-nav">
+  <div class="repository-content">
+    <div class="columns">
+      <div class="column one-fourth">
+        <%= render partial: 'insights/menu' %>
+      </div>
+      <div class="column three-fourth">
+        <div id="js-clones-graph" class="boxed-group flush">
+          <h3>Git clones</h3>
+          <div class="boxed-group-inner">
+            <div class="graph-canvas traffic-graph uniques-graph js-graph" data-url="#" data-graph-name="traffic-clones">
+              <div class="activity">
+                <img class="graph-loading dots" src="#" width="64" alt>
+                <div class="graph-loading msg">
+                  <p>Crunching the latest data, just for you. Hang right...</p>
+                </div>
+                <div class="graph-empty msg mt-6">
+                  <h4>We don`t have enough data to show anything useful.</h4>
+                  <p>It usually takes about a week to populate this graph</p>
+                </div>
+                <div class="graph-no-usable-data msg mt-6">
+                  <p>We need at least ine non-empty commit with an email to generate this graph.</p>
+                </div>
+              </div>
+              <div class="graph-error flash flash-error mt-6">
+                <p>We tried our best, but the graph wouldn`t load. Try reload the page.</p>
+              </div>
+              <svg width="719" height="243" class="vis">
+                <g transform="translate(40,20)">
+                </g>
+              </svg>
+            </div>
+            <div class="traffic-graph-stats">
+              <ul class="summary-stats">
+                <li>
+                  <span class="num js-traffic-total clones">?</span> Clones
+                </li>
+                <li>
+                  <span class="num js-traffic-uniques uniques">?</span> Uniques cloners
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="js-visitors-graph" class="boxed-group flush">
+          <h3>Visitors</h3>
+          <div class="boxed-group-inner">
+            <div class="graph-canvas traffic-graph uniques-graph js-graph" data-url="#" data-graph-name="traffic-visitors">
+              <div class="activity">
+                <img class="graph-loading dots" src="#" width="64" alt>
+                <div class="graph-loading msg">
+                  <p>Crunching the latest data, just for you. Hang tight...</p>
+                </div>
+                <div class="graph-empty msg mt-6">
+                  <h4>We don`t have enough data to show anything useful.</h4>
+                  <p>It ussaly takes about a week to populate this graph.</p>
+                </div>
+                <div class="graph-no-usable-data msg mt-6">
+                  <p>We need at least one non-empty commit with en email to generate this graph.</p>
+                </div>
+              </div>
+              <div class="graph-error flash flash-error mt-6">
+                <p>We tried our best, but the graph wouldn`t load. Try reloading the page.</p>
+              </div>
+              <svg width="719" height="243" class="vis">
+                <g transform="translate(40,20)"></g>
+              </svg>
+            </div>
+            <div class="traffic-graph-stats">
+              <ul class="summary-stats">
+                <li>
+                  <span class="num js-traffic-total visits">?</span> Views
+                </li>
+                <li>
+                  <span class="num js-traffic-total visits">?</span> Uniques visitors
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="columns top-lists">
+          <div id="top-domains" class="column one-half top-domains" data-pjax-container data-pjax>
+            <div class="boxed-group">
+              <h3>Referring sites</h3>
+              <table class="capped-list boxed-group-inner">
+                <thead>
+                  <tr>
+                    <th>Site</th>
+                    <th class="middle">Views</th>
+                    <th class="middle">Unique visitors</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="capped-list-label">
+                      <img alt class="top-domains-icon" height="16" src="#" width="15">github.com
+                    </td>
+                    <td class="middle">?</td>
+                    <td class="middle">?</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="column one-half top-content boxed-group">
+            <h3>Popular content</h3>
+            <table class="capped-list mini-icons boxed-group-inner">
+              <thead>
+                <tr>
+                  <th>Content</th>
+                  <th class="middle">Views</th>
+                  <th class="middle"> Unique  visitors</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="capped-list-label">
+                    <svg aria-hidden="true" class="octicon octicon-file" height="16" version="1.1" viewBox="0 0 12 16" width="12"></svg>
+                    <a title="file n" href="#">File n</a>
+                  </td>
+                  <td class="middle">?</td>
+                  <td class="middle">?</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

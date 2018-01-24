@@ -876,3 +876,160 @@ html|* > svg {
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
 }
+
+.boxed-group>h3 {
+  display: block;
+  padding: 9px 10px 10px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 17px;
+  background-color: #f6f8fa;
+  border: 1px solid rgba(27,31,35,0.15);
+  border-bottom: 0;
+  border-radius: 3px 3px 0 0;
+}
+
+.traffic-graph {
+  min-height: 150px;
+}
+
+.traffic-graph .activity {
+  margin-top: 0;
+}
+
+.traffic-graph .activity .dots {
+  margin-top: 40px;
+}
+
+.traffic-graph-stats {
+  border-top: 1px solid #dfe2e5;
+}
+
+.one-half {
+  width: 50%;
+}
+
+.one-half .boxed-group .dashboard-sidebar .boxed-group {
+  margin-bottom: 20px;
+}
+
+table.capped-list {
+  width: 100%;
+  line-height: 100%;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+td, th {
+  padding: 0;
+}
+
+table.capped-list th {
+  padding: 8px;
+  text-align: left;
+  background: #f6f8fa;
+  border-bottom: 1px solid #dfe2e5;
+}
+
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+table.capped-list td {
+  padding: 8px;
+  font-size: 12px;
+  border-bottom: 1px solid #eaecef;
+}
+
+.capped-list-label {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+table.capped-list th.middle {
+  text-align: center;
+}
+
+table.capped-list th.middle, table.capped-list td.middle {
+  text-align: center;
+}
+
+.top-domains-icon {
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.graphs.wheader h2 {
+  padding: 1px;
+}
+
+.graphs .dir {
+  float: right;
+  padding-top: 5px;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 100%;
+  color: #6a737d;
+}
+
+.cadd {
+  font-weight: 600;
+  color: #28a745;
+}
+
+.cdel {
+  font-weight: 600;
+  color: #cd2431;
+}
+
+.tabnav-tabs {
+  margin-bottom: -1px;
+}
+
+.tabnav-tab.selected {
+  color: #24292e;
+  background-color: #fff;
+  border-color: #d1f5da;
+  border-radius: 3px 3px 0 0;
+}
+
+.tabnav-tab {
+  display: inline-block;
+  padding: 8px 12px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #586069;
+  text-decoration: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-bottom: 0;
+}
+
+.border-buttom-0 {
+  border-bottom:0 !important;
+}
+
+.mb-3 {
+  margin-bottom: 16px !important;
+}
+

@@ -1,0 +1,100 @@
+<div class="container new-discussion-timeline experiment-repo-nav">
+  <div class="repository-content">
+    <div class="columns">
+      <div class="column one-fourth">
+        <%= render partial: 'insights/menu' %>
+      </div>
+      <div class="column three-fourth">
+        <div id="dependencies">
+          <div class="Subhead">
+            <h2 class="Subhead-heading">Dependency graph</h2>
+          </div>
+          <div class="tabnav">
+            <nav class="tabnav-tabs" aria-label="Dependency graph menu">
+              <a href="#" class="js-selected-navigation-item selected tabnav-tab"
+                 data-selected-links="#" role="tab">Dependencies</a>
+              <a href="#" class="js-selected-navigation-item tabnav-tab"
+                 data-selected-links="#" role="tab">Dependents</a>
+            </nav>
+          </div>
+          <div class="mb-4">
+            These dependencies have been defined in <strong>GitClub</strong>`s manifest files, such as
+            <a href="#" class="text-bold">FILE</a>
+            and
+            <a href="#" class="text-bold">FILE</a>
+          </div>
+          <div class="Box mb-3">
+            <div class="Box-header clearfix border-buttom-0">
+              <div class="table-list-filters">
+                <div class="table-list-header-toggle states float-left pl-0 text-gray-dark">
+                  <svg aria-hidden="true" class="octicon octicon-package mr-2 text-gray-light"
+                       height="16" version="1.1" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M 1 4.27 v 7.47 c 0 0.45 0.3 0.84 0.75 0.97 l
+                    6.5 1.73 c 0.16 0.05 0.34 0.05 0.5 0 l 6.5 -1.73 c 0.45 -0.13 0.75 -0.52 0.75
+                    -0.97 V 4.27 c 0 -0.45 -0.3 -0.84 -0.75 -0.97 l -6.5 -1.74 a 1.4 1.4 0 0 0 -0.5
+                    0 L 1.75 3.3 c -0.45 0.13 -0.75 0.52 -0.75 0.97 Z m 7 9.09 l -6 -1.59 V 5 l 6
+                    1.61 v 6.75 Z M 2 4 l 2.5 -0.67 L 11 5.06 l -2.5 0.67 L 2 4 Z m 13 7.77 l -6 1.59
+                    V 6.61 l 2 -0.55 V 8.5 l 2 -0.53 V 5.53 L 15 5 v 6.77 Z m -2 -7.24 L 6.5 2.8 l 2
+                    -0.53 L 15 4 l -2 0.53 Z"></path>
+                  </svg>
+                  Dependencies defined in
+                  <a href="#" class="link-gray-dark text-bold" data-octo-click="dep_graph_manifest">FILE</a>
+                  <span class="Counter v-align-middle">0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Box mb-3">
+            <div class="Box-header clearfix border-bottom-0">
+              <div class="table-list-filters">
+                <div class="table-list-header-toggle states float-left pl-0 text-gray-dark">
+                  <svg aria-hidden="true" class="octicon octicon-package mr-2 text-gray-light"
+                       height="16" version="1.1" viewBox="0 0 16 16" width="16">
+                    <path fill-rule="evenodd" d="M 1 4.27 v 7.47 c 0 0.45 0.3 0.84 0.75 0.97 l
+                    6.5 1.73 c 0.16 0.05 0.34 0.05 0.5 0 l 6.5 -1.73 c 0.45 -0.13 0.75 -0.52 0.75
+                    -0.97 V 4.27 c 0 -0.45 -0.3 -0.84 -0.75 -0.97 l -6.5 -1.74 a 1.4 1.4 0 0 0 -0.5
+                    0 L 1.75 3.3 c -0.45 0.13 -0.75 0.52 -0.75 0.97 Z m 7 9.09 l -6 -1.59 V 5 l 6
+                    1.61 v 6.75 Z M 2 4 l 2.5 -0.67 L 11 5.06 l -2.5 0.67 L 2 4 Z m 13 7.77 l -6 1.59
+                    V 6.61 l 2 -0.55 V 8.5 l 2 -0.53 V 5.53 L 15 5 v 6.77 Z m -2 -7.24 L 6.5 2.8 l 2
+                    -0.53 L 15 4 l -2 0.53 Z"></path>
+                  </svg>
+                  Dependencies defined in
+                  <a href="#" class="link-gray-dark text-bold" data-octo-click="dep_graph_manifest">FILE</a>
+                  <span class="Counter v-aligin-middle">0</span>
+                </div>
+              </div>
+            </div>
+            <div class="border-top Details js-details-container">
+              <div class="Box-row d-flex flex-items-center js-dependency">
+                <button type="button" class="btn-link no-underline js-sub-dependencies js-details-target"
+                        data-octo-click="dep_graph_package_expand" data-octo-dimensions="package_name:accepts"
+                        style="width: 24px;" aria-label="Reveal accepts dependencies" aria-expanded="false"
+                        data-sub-dependency-url="#">
+                  <span class="text-gray-light text-bold mr-3">
+                    <svg aria-hidden="true" class="octicon octicon-chevron-down js-expanded d-none" height="16"
+                         version="1.1" viewBox="0 0 10 16">
+                      <path fill-rule="evenodd" d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6z">
+
+                      </path>
+                    </svg>
+                  </span>
+                </button>
+                <a href="#">
+                  <img alt="#" class="avatar mr-2" height="20" src="#" width="20">
+                </a>
+                <span class="f5 text-gray-light">
+                  <a href="#" data-octo-click="dep_graph_package"> Person /
+                  <span class="text-bold">update</span>
+                  </a>
+                </span>
+                <div class="d-flex flex-auto flex-justify-end flex-items-center">
+                  <code> ^ 0.0.0</code>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

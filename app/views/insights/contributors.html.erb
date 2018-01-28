@@ -1,0 +1,78 @@
+<div class="container new-discussion-timeline experiment-repo-nav">
+  <div class="repository-content">
+    <div class="columns">
+      <div class="column one-fourth">
+        <%= render partial: 'insights/menu' %>
+      </div>
+      <div class="column three-fourth">
+        <div class="graph-filter clearfix __web-inspector-hide-shortcut__">
+          <div class="Subhead">
+            <h2 class="Subhead-heading js-date-range">"Date" of first contribution - Current "Date"</h2>
+            <div class="Subhead-actions">
+              <div class="select-menu js-menu-container js-select-menu js-contribution-container">
+                <button class="btn btn-sm select-menu-button js-menu-target" type="button" aria-haspopup="true" aria-expanded="false">
+                  <i>Contributions</i>
+                  <span class="js-select-button">Commits</span>
+                </button>
+                <div class="select-menu-model-holder js-menu-container js-navigation-container">
+                  <div class="select-menu-model">
+                    <div class="select-menu-header">
+                      <svg aria-label="Close" class="octicon octicon-x js-menu-close" height="16" role="img" version="1.1"
+                           viewBox="0 0 12 16" width="12"></svg>
+                      <span class="select-menu-title">Filter contributions</span>
+                    </div>
+                    <div class="select-menu-list">
+                      <div class="select-menu-item js-navigation-item">
+                        <input id="ctype a" name="ctype" type="radio" value="a">
+                        <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16"
+                             version="1.1" viewBox="0 0 12 16" width="12"></svg>
+                      </div>
+                      <div class="select-menu-item js-navigation-item">
+                        <input id="ctype d" name="ctype" type="radio" value="d">
+                        <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16"
+                             version="1.1" viewBox="0 0 12 16" width="12"></svg>
+                      </div>
+                      <div class="select-menu-item js-navigation-item">
+                        <input id="ctype c" name="ctype" type="radio" value="c">
+                        <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16"
+                             version="1.1" viewBox="0 0 12 16" width="12"></svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="info">Contributions to staging, excluding merge commits</p>
+        </div>
+        <div class="graphs">
+          <div id="contributors-master" class="tint-box">
+            <svg height="175" width="730" class="viz">
+              <g transform="translate(50,20)"></g>
+            </svg>
+          </div>
+          <div id="contributors" class="clearfix js-graph graph-canvas" data-graph-name="contributors"
+               data-graph-width="335" data-url="#">
+            <div class="activity">
+              <img class="graph-loading dots" src="#" width="64" alt>
+              <div class="graph-loading msg">
+                <p>Crunching the latest data, just for you, Hang tight...</p>
+              </div>
+              <div class="graph-empty msg mt-6">
+                <h4> We don`t have enough data to who anything useful.</h4>
+                <p>It usually takes about a week to populate this graph.</p>
+              </div>
+              <div class="graph-no-usable-data msg mt-6">
+                <p>We need at least one non-empty commit with an email to generate this graph.</p>
+              </div>
+            </div>
+            <div class="graph-error flash flash-error mt-6">
+              <p>We tried our best, but the graph wouldn`t load.Try reload the page</p>
+            </div>
+            <ol class="contrib-data list-style-none">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

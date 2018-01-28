@@ -1,0 +1,43 @@
+<div class="container new-discussion-timeline experiment-repo-nav">
+  <div class="repository-content">
+    <div class="columns">
+      <div class="column one-fourth">
+        <%= render partial: 'insights/menu' %>
+      </div>
+      <div class="column three-fourth">
+        <div class="graphs wheader">
+          <h2 class="ghead">
+            <span class="dir">
+              <span class="cadd">Additions</span>
+              and
+              <span class="cdel">Deletions</span>
+              per week
+            </span>
+          </h2>
+          Information graph about code frequency
+          <div class="js-graph graph-canvas" data-graph-name="code-frequency" data-url="#">
+            <div class="activity">
+              <img class="graph-loading dots" src="#" width="64" alt>
+              <div class="graph-loading msg">
+                <p>Crunching the latest data, just for you. Hang tight...</p>
+              </div>
+              <div class="graph-empty msg mt-6">
+                <h4>We don`t have enough data to show anything useful.</h4>
+                <p>It usually takes about a week to populate this graph</p>
+              </div>
+              <div class="graph-no-usable-data msg mt-6">
+                <p>We need at least one non-empty commit with an email to generate this graph.</p>
+              </div>
+            </div>
+            <div class="graph-error flash flash-error mt-6">
+              <p>We tried out best, but the graph wouldn`t load. Try reloading the page.</p>
+            </div>
+            <svg width="730" height="500" class="viz code-frequency">
+              <g transform="translate(40,10)"></g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

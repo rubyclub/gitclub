@@ -1,0 +1,441 @@
+<div class="container new-discussion-timeline experiment-repo-nav">
+  <div class="repository-content">
+    <div class="issues-listing" data-pjax>
+      <div class="container mb-4">
+        <div class="content p-4 text-center rounded-1 border border-gray-light">
+          <div class="position-relative">
+            <form accept-charset="UTF-8" action="#"  data-remote="true" method="post">
+
+            </form>
+            <div class="col-6 mx-auto">
+              <h4 class="mb-1">
+                Label issues and pull requests for new contributors
+              </h4>
+              <p style="margin-bottom: 0px;" class="mb-1">
+                Now, Gitclub will help potential first-time contributors discover issues labeled with
+                <a href="#" class="d-inline-block IssueLabel v-aligin-text-top labelstyle-33aa3f linked-labelstyle-33aa3f"
+                data-ga-click="#" data-octo-click="#" data-octo-dismensions="#" style="background-color: #33aa3f; color: #00000;" title="help wanted">help wanted</a>
+                or
+                <a href="#" class="d-inline-block IssueLabel v-aligin-text-top labelstyle-33aa3f linked-labelstyle-33aa3f"
+                   data-ga-click="#" data-octo-click="#" data-octo-dismensions="#" style="background-color: #7057ff; color: #ffffff;" title="help wanted">good first issue</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="subnav" data-pjax>
+        <a href="#" class="btn btn-primary float-right" data-hotkey="c" tabindex="0" data-ga-click="Repository, go to compare view, location: pull request list; New pull request">
+          New pull request
+        </a>
+        <div class="float-left subnav-spacer-right" role="search">
+          <div class="float-left">
+            <button class="btn select-menu-button btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+              Filters
+            </button>
+            <div class="dropdown-menu" aria-expanded="false">
+              <div class="select-menu-model">
+                <div class="select-menu-list">
+                  <a href="#" class="select-menu-item ">
+                    <div class="select-menu-item-text">
+                    Open issues and pull requests
+                    </div>
+                  </a>
+                  <a href="#" class="select-menu-item">
+                    <div class="select-menu-item-text">
+                    Your issues
+                    </div>
+                  </a>
+                  <a href="#" class="select-menu-item">
+                    <div class="select-menu-item-text">
+                    Your pull requests
+                    </div>
+                  </a>
+                  <a href="#" class="select-menu-item">
+                    <div class="select-menu-item-text">
+                    Everything assigned to you
+                    </div>
+                  </a>
+                  <a href="#" class="select-menu-item">
+                    <div class="select-menu-item-text">
+                    Everything mentioning you
+                    </div>
+                  </a>
+                  <a href="#" class="select-menu-item">
+                    <div class="select-menu-item-text">
+                      View advanced search syntax
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <form accept-charset="UTF-8" action="#" class="subnav-search float-left" data-pjax="true" method="get">
+            <div style="margin: 0; padding: 0; display: inline;">
+              <input name="utf8" type="hidden" value="+">
+            </div>
+            <input aria-label="Search all issues" class="form-control subnav-search-input input-contrast" data-hotkey="/" id="js-issues-search"
+                   name="q" placeholder="Search all issues" type="text" value="is:pr is:open">
+            <svg aria-hidden="true" class="octicon octicon-search subnav-search-icon" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+              <path fill-rule="evenodd" d="M 15.7 13.3 l -3.81 -3.83 A 5.93 5.93 0 0 0 13 6 c 0 -3.31 -2.69 -6 -6 -6 S 1 2.69 1 6 s 2.69 6 6 6
+              c 1.3 0 2.48 -0.41 3.47 -1.11 l 3.83 3.81 c 0.19 0.2 0.45 0.3 0.7 0.3 c 0.25 0 0.52 -0.09 0.7 -0.3 a 0.996 0.996 0 0 0 0 -1.41 v
+               0.01 Z M 7 10.7 c -2.59 0 -4.7 -2.11 -4.7 -4.7 c 0 -2.59 2.11 -4.7 4.7 -4.7 c 2.59 0 4.7 2.11 4.7 4.7 c 0 2.59 -2.11 4.7 -4.7 4.7 Z"></path>
+            </svg>
+          </form>
+        </div>
+        <div class="subnav-links float-left" role="navigation">
+          <a href="#" class="subnav-item" data-selected-links="repo_labels">Labels</a>
+          <a href="#" class="subnav-item" data-selected-links="repo_milestones"> Milestones</a>
+        </div>
+      </div>
+      <div class="table-list-header">
+        <label class="float-left py-2 pl-3">
+          <input type="checkbox">
+        </label>
+        <div class="table-list-filters">
+          <div class="table-list-header-toggle states float-left pl-3">
+            <a href="#" class="btn-link-selected">
+              <svg aria-hidden="true" class="octicon octicon-git-pull-requests" height="16" version="1.1" viewBox="0 0 12 16" width="12">
+                <path fill-rule="evenodd" d="M 11 11.28 V 5 c -0.03 -0.78 -0.34 -1.47 -0.94 -2.06 C 9.46 2.35 8.78 2.03 8 2 H 7 V 0 L 4 3
+                 l 3 3 V 4 h 1 c 0.27 0.02 0.48 0.11 0.69 0.31 c 0.21 0.2 0.3 0.42 0.31 0.69 v 6.28 A 1.993 1.993 0 0 0 10 15 a 1.993 1.993
+                  0 0 0 1 -3.72 Z m -1 2.92 c -0.66 0 -1.2 -0.55 -1.2 -1.2 c 0 -0.65 0.55 -1.2 1.2 -1.2 c 0.65 0 1.2 0.55 1.2 1.2 c 0 0.65
+                   -0.55 1.2 -1.2 1.2 Z M 4 3 c 0 -1.11 -0.89 -2 -2 -2 a 1.993 1.993 0 0 0 -1 3.72 v 6.56 A 1.993 1.993 0 0 0 2 15 a 1.993
+                    1.993 0 0 0 1 -3.72 V 4.72 c 0.59 -0.34 1 -0.98 1 -1.72 Z m -0.8 10 c 0 0.66 -0.55 1.2 -1.2 1.2 c -0.65 0 -1.2 -0.55
+                    -1.2 -1.2 c 0 -0.65 0.55 -1.2 1.2 -1.2 c 0.65 0 1.2 0.55 1.2 1.2 Z M 2 4.2 C 1.34 4.2 0.8 3.65 0.8 3 c 0 -0.65 0.55 -1.2
+                     1.2 -1.2 c 0.65 0 1.2 0.55 1.2 1.2 c 0 0.65 -0.55 1.2 -1.2 1.2 Z"></path>
+              </svg>
+              ? Open
+            </a>
+            <a href="#" class="btn-link">
+              <svg aria-hidden="true" class="octicon octicon-check" height="16" version="1.1" viewBox="0 0 12 16" width="12">
+                <path fill-rule="evenodd" d="M 12 5 l -8 8 l -4 -4 l 1.5 -1.5 L 4 10 l 6.5 -6.5 Z"></path>
+              </svg>
+              ? Closed
+            </a>
+          </div>
+          <div class="table-list-header-toggle float-right">
+            <div class="float-left select-menu" data-contents-url="#">
+              <button class="btn-link select-menu-button dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-hotkey="u">
+                After
+              </button>
+              <div class="dropdown-menu dropdown-menu-right select-menu-model-holder" aria-expanded="false">
+                <div class=" select-menu-model">
+                  <div class="select-menu-header">
+                    <svg aria-label="Close" class="octicon octicon-x" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12">
+                      <path fill-rule="evenodd" d="M 7.48 8 l 3.75 3.75 l -1.48 1.48 L 6 9.48 l -3.75 3.75 l -1.48 -1.48 L 4.52 8 L 0.77 4.25 l 1.48 -1.48 L 6 6.52 l 3.75 -3.75 l 1.48 1.48 Z"></path>
+                    </svg>
+                    <span class="select-menu-title select-menu-item"> Filter by author</span>
+                  </div>
+                  <div class="js-select-menu-deferred-content">
+                    <div class="select-menu-filters">
+                      <div class="select-menu-text-filter">
+                        <input type="text" id="author-filter-field" class="form-control"
+                        placeholder="Filer users" aria-label="Filter users" autocomplete="off">
+                      </div>
+                    </div>
+                    <div class="select-menu-list" data-filter="author">
+                      <div data-filterable-for="author-filter-field" data-filterable-type="substring">
+                        <a href="#" class="select-menu-item">Andrey</a>
+                        <a href="#" class="select-menu-item">Kirill</a>
+                        <a href="#" class="select-menu-item">Yuri</a>
+                        <a href="#" class="select-menu-item">Sergii</a>
+                        <a href="#" class="select-menu-item">Nick</a>
+                      </div>
+                      <form accept-charset="UTF-8" action="#" class="select-menu-new-item-form" data-name="author" method="get"></form>
+                    </div>
+                  </div>
+                  <div class="select-menu-loading-overlay anim-pulse"></div>
+                </div>
+              </div>
+            </div>
+            <div class="float-left select-menu label-select-menu" data-contents-url="#">
+              <button class="btn-link select-menu-button dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-hotkey="u">
+                Labels
+              </button>
+              <div class="dropdown-menu dropdown-menu-right select-menu-model-holder" aria-expanded="false">
+                <div class=" select-menu-model">
+                  <div class="select-menu-header">
+                    <svg aria-label="Close" class="octicon octicon-x" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12">
+                      <path fill-rule="evenodd" d="M 7.48 8 l 3.75 3.75 l -1.48 1.48 L 6 9.48 l -3.75 3.75 l -1.48 -1.48 L 4.52 8 L 0.77 4.25 l 1.48 -1.48 L 6 6.52 l 3.75 -3.75 l 1.48 1.48 Z"></path>
+                    </svg>
+                    <span class="select-menu-title select-menu-item"> Filter by label</span>
+                  </div>
+                  <div class="js-select-menu-deferred-content">
+                    <div class="select-menu-filters">
+                      <div class="select-menu-text-filter">
+                        <input type="text" id="author-filter-field" class="form-control"
+                               placeholder="Filer labels" aria-label="Filter labels" autocomplete="off">
+                      </div>
+                    </div>
+                    <div class="select-menu-list" data-filter="author">
+                      <div data-filterable-for="author-filter-field" data-filterable-type="substring">
+                        <a href="#" class="select-menu-item">
+                          <strong>Unlabled</strong>
+                        </a>
+                        <a href="#" class="select-menu-item">bug</a>
+                        <a href="#" class="select-menu-item">duplicate</a>
+                        <a href="#" class="select-menu-item">enhancement</a>
+                        <a href="#" class="select-menu-item">good first issue</a>
+                        <a href="#" class="select-menu-item">help wanted</a>
+                        <a href="#" class="select-menu-item">invalid</a>
+                        <a href="#" class="select-menu-item">question</a>
+                        <a href="#" class="select-menu-item">wontfix</a>
+                      </div>
+                      <form accept-charset="UTF-8" action="#" class="select-menu-new-item-form" data-name="author" method="get"></form>
+                    </div>
+                  </div>
+                  <div class="select-menu-loading-overlay anim-pulse"></div>
+                </div>
+              </div>
+            </div>
+            <div class="float-left select-menu" data-contents-url="#">
+              <button class="btn-link select-menu-button dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-hotkey="u">
+                Projects
+              </button>
+              <div class="dropdown-menu dropdown-menu-right select-menu-model-holder" aria-expanded="false">
+                <div class=" select-menu-model">
+                  <div class="select-menu-header">
+                    <svg aria-label="Close" class="octicon octicon-x" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12">
+                      <path fill-rule="evenodd" d="M 7.48 8 l 3.75 3.75 l -1.48 1.48 L 6 9.48 l -3.75 3.75 l -1.48 -1.48 L 4.52 8 L 0.77 4.25 l 1.48 -1.48 L 6 6.52 l 3.75 -3.75 l 1.48 1.48 Z"></path>
+                    </svg>
+                    <span class="select-menu-title select-menu-item">Filter by project</span>
+                  </div>
+                  <div class="js-select-menu-deferred-content">
+                    <div class="select-menu-filters">
+                      <div class="select-menu-text-filter">
+                        <input type="text" id="author-filter-field" class="form-control"
+                               placeholder="Filter projects" aria-label="Filter projects" autocomplete="off">
+                      </div>
+                      <div class="select-menu-tabs">
+                        <ul>
+                          <li class="select-menu-tab">
+                            <button type="button" data-tab-filter="tab-repository" class="select-menu-tab-nav" aria-current="true">
+                              Repository
+                            </button>
+                          </li>
+                          <li class="select-menu-tab">
+                            <button type="button" data-tab-filter="tab-repository" class="select-menu-tab-nav" aria-current="true">
+                              Organization
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="select-menu-list select-menu-tab-bucket filterable-empty selected" data-tab-filter="tab-repository">
+                      <div data-filterable-for="projects-filter-field" data-filterable-type="substring" class="filterable-empty">
+
+                      </div>
+                      <div class="select-menu-no-results">No Projects found. Sorry about that.</div>
+                      <form accept-charset="UTF-8" action="#" class="select-menu-new-item-form" data-name="author" method="get"></form>
+                    </div>
+                  </div>
+                  <div class="select-menu-loading-overlay anim-pulse"></div>
+                </div>
+              </div>
+            </div>
+            <div class="float-left select-menu" data-contents-url="#">
+              <button class="btn-link select-menu-button dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-hotkey="u">
+                Milestones
+              </button>
+              <div class="dropdown-menu dropdown-menu-right select-menu-model-holder" aria-expanded="false">
+                <div class=" select-menu-model">
+                  <div class="select-menu-header">
+                    <svg aria-label="Close" class="octicon octicon-x" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12">
+                      <path fill-rule="evenodd" d="M 7.48 8 l 3.75 3.75 l -1.48 1.48 L 6 9.48 l -3.75 3.75 l -1.48 -1.48 L 4.52 8 L 0.77 4.25 l 1.48 -1.48 L 6 6.52 l 3.75 -3.75 l 1.48 1.48 Z"></path>
+                    </svg>
+                    <span class="select-menu-title select-menu-item">Filter by milestones</span>
+                  </div>
+                  <div class="js-select-menu-deferred-content">
+                    <div class="select-menu-filters">
+                      <div class="select-menu-text-filter">
+                        <input type="text" id="author-filter-field" class="form-control"
+                               placeholder="Filter milestones" aria-label="Filter milestones" autocomplete="off">
+                      </div>
+                      <div class="select-menu-list">
+                        <div data-filterable-for="milestones-filter-field" data-filterable-type="substring">
+                          <a href="#" class="select-menu-item">
+                            <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="16">
+
+                            </svg>
+                            <div class="select-menu-text-text">
+                              <strong>Issues with no milestone</strong>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="select-menu-no-results"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="select-menu-loading-overlay anim-pulse"></div>
+                </div>
+              </div>
+            </div>
+            <div class="float-left select-menu" data-contents-url="#">
+              <button class="btn-link select-menu-button dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-hotkey="u">
+                Reviews
+              </button>
+              <div class="dropdown-menu dropdown-menu-right select-menu-modal-holder" aria-expanded="false">
+                <div class="select-menu-modal">
+                  <div class="select-menu-header">
+                    <svg aria-label="Close" class="octicon octicon-x" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12">
+                      <path fill-rule="evenodd" d="M 7.48 8 l 3.75 3.75 l -1.48 1.48 L 6 9.48 l -3.75 3.75 l -1.48 -1.48 L 4.52 8 L 0.77 4.25 l 1.48 -1.48 L 6 6.52 l 3.75 -3.75 l 1.48 1.48 Z"></path>
+                    </svg>
+                    <span class="select-menu-title select-menu-item">Filter by reviews</span>
+                  </div>
+                  <div class="select-menu-list" role="menu">
+                    <div>
+                      <a href="#" class="select-menu-item" role="menuitem">
+                        No reviews
+                      </a>
+                      <a href="#" class="select-menu-item" role="menuitem">
+                        Review required
+                      </a>
+                      <a href="#" class="select-menu-item" role="menuitem">
+                        Approved review
+                      </a>
+                      <a href="#" class="select-menu-item" role="menuitem">
+                        Changed requested
+                      </a>
+                      <a href="#" class="select-menu-item" role="menuitem">
+                        Reviewed by you
+                      </a>
+                      <a href="#" class="select-menu-item" role="menuitem">
+                        Awaiting review from you
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="float-left select-menu" data-contents-url="#">
+              <button class="btn-link select-menu-button dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-hotkey="u">
+                Assignee
+              </button>
+              <div class="dropdown-menu dropdown-menu-right select-menu-model-holder" aria-expanded="false">
+                <div class=" select-menu-model">
+                  <div class="select-menu-header">
+                    <svg aria-label="Close" class="octicon octicon-x" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12">
+                      <path fill-rule="evenodd" d="M 7.48 8 l 3.75 3.75 l -1.48 1.48 L 6 9.48 l -3.75 3.75 l -1.48 -1.48 L 4.52 8 L 0.77 4.25 l 1.48 -1.48 L 6 6.52 l 3.75 -3.75 l 1.48 1.48 Z"></path>
+                    </svg>
+                    <span class="select-menu-title select-menu-item"> Filter by who's assigned</span>
+                  </div>
+                  <div class="js-select-menu-deferred-content">
+                    <div class="select-menu-filters">
+                      <div class="select-menu-text-filter">
+                        <input type="text" id="author-filter-field" class="form-control"
+                               placeholder="Filer users" aria-label="Filter users" autocomplete="off">
+                      </div>
+                    </div>
+                    <div class="select-menu-list" data-filter="author">
+                      <div data-filterable-for="author-filter-field" data-filterable-type="substring">
+                        <a href="#" class="select-menu-item">Andrey</a>
+                        <a href="#" class="select-menu-item">Kirill</a>
+                        <a href="#" class="select-menu-item">Yuri</a>
+                        <a href="#" class="select-menu-item">Sergii</a>
+                        <a href="#" class="select-menu-item">Nick</a>
+                      </div>
+                      <form accept-charset="UTF-8" action="#" class="select-menu-new-item-form" data-name="author" method="get"></form>
+                    </div>
+                  </div>
+                  <div class="select-menu-loading-overlay anim-pulse"></div>
+                </div>
+              </div>
+            </div>
+            <div class="float-left select-menu" data-contents-url="#">
+              <button class="btn-link select-menu-button icon-only dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Sort
+                <span class="sort-label"></span>
+              </button>
+              <div class="dropdown-menu dropdown-menu-right select-menu-modal-holder" aria-expanded="false">
+                <div class="select-menu-modal">
+                  <div class="select-menu-header" tabindex="-1">
+                    <svg aria-label="Close" class="octicon octicon-x" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12">
+                      <path fill-rule="evenodd" d="M 7.48 8 l 3.75 3.75 l -1.48 1.48 L 6 9.48 l -3.75 3.75 l -1.48 -1.48 L 4.52 8 L 0.77 4.25 l 1.48 -1.48 L 6 6.52 l 3.75 -3.75 l 1.48 1.48 Z"></path>
+                    </svg>
+                    <span class="select-menu-title select-menu-item">Sort</span>
+                  </div>
+                  <div class="select-menu-list" role="menu">
+                    <div>
+                      <a href="#" class="select-menu-item" role="menuitem">
+                        Newest
+                      </a>
+                      <a href="#" class="select-menu-item" role="menuitem">
+                        Oldest
+                      </a>
+                      <a href="#" class="select-menu-item" role="menuitem">
+                        Most commented
+                      </a>
+                      <a href="#" class="select-menu-item" role="menuitem">
+                        Least commented
+                      </a>
+                      <a href="#" class="select-menu-item" role="menuitem">
+                        Recently updated
+                      </a>
+                      <a href="#" class="select-menu-item" role="menuitem">
+                        Least recently updated
+                      </a>
+                      <a href="#" class="select-menu-item" role="menuitem">
+                        Most reactions
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="table-list-triage">
+          <span class="pl-3 table-list-header-meta"></span>  <!-- Add code -->
+          <div class="table-list-header-toggle float-right"></div>  <!-- Add code -->
+        </div>
+      </div>
+      <div class="border-right border-buttom border-left">
+        <ul>
+          <li id="issue_3" class="Bow-row Box-row-focus-gray p-0 selectable read navigation-focus" data-id="290613403">
+            <div class="d-table table-fixed width-full Box-row--drag-hide position-relative">
+              <label class="float-left py-2 pl-3">
+                <input type="checkbox" name="issues[]" value="3">
+              </label>
+                <div class="float-left pt-2 pl-3">
+                  <span class="tooltipped tooltipped-n" aria-label="Open pull request">
+                    <svg aria-hidden="true" class="octicon octicon-git-pull-request open" height="16" version="1.1" viewBox="0 0 12 16" width="12">
+                      <path fill-rule="evenodd" d="M 11 11.28 V 5 c -0.03 -0.78 -0.34 -1.47 -0.94 -2.06 C 9.46 2.35 8.78 2.03 8 2 H 7 V 0 L 4 3 l
+                       3 3 V 4 h 1 c 0.27 0.02 0.48 0.11 0.69 0.31 c 0.21 0.2 0.3 0.42 0.31 0.69 v 6.28 A 1.993 1.993 0 0 0 10 15 a 1.993 1.993 0
+                        0 0 1 -3.72 Z m -1 2.92 c -0.66 0 -1.2 -0.55 -1.2 -1.2 c 0 -0.65 0.55 -1.2 1.2 -1.2 c 0.65 0 1.2 0.55 1.2 1.2 c 0 0.65 -0.55
+                         1.2 -1.2 1.2 Z M 4 3 c 0 -1.11 -0.89 -2 -2 -2 a 1.993 1.993 0 0 0 -1 3.72 v 6.56 A 1.993 1.993 0 0 0 2 15 a 1.993 1.993 0
+                         0 0 1 -3.72 V 4.72 c 0.59 -0.34 1 -0.98 1 -1.72 Z m -0.8 10 c 0 0.66 -0.55 1.2 -1.2 1.2 c -0.65 0 -1.2 -0.55 -1.2 -1.2 c 0
+                          -0.65 0.55 -1.2 1.2 -1.2 c 0.65 0 1.2 0.55 1.2 1.2 Z M 2 4.2 C 1.34 4.2 0.8 3.65 0.8 3 c 0 -0.65 0.55 -1.2 1.2 -1.2 c 0.65
+                          0 1.2 0.55 1.2 1.2 c 0 0.65 -0.55 1.2 -1.2 1.2 Z"></path>
+                    </svg>
+                  </span>
+                </div>
+                <div class="float-left pt-2 pl-2"></div>
+                <div class="float-left col-9 lh-condensed p-2">
+                  <a href="#" class="link-gray-dark v-align-middle no-underline h4">
+                    Add style for main page
+                  </a>
+                  <div class="mt-1 text-small text-gray">
+                    <span> #? opened ? days ago</span>
+                    <span>- Changes requested </span>
+                  </div>
+                </div>
+                <div class="float-right col-2"></div>  <!--Not finished -->
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="paginate-container"></div>
+      <div class="protip">
+        <svg aria-hidden="true" class="octicon octicon-light-bulb text-gray" height="16" version="1.1" viewBox="0 0 12 16" width="12">
+          <path fill-rule="evenodd" d="M 6.5 0 C 3.48 0 1 2.19 1 5 c 0 0.92 0.55 2.25 1 3 c 1.34 2.25 1.78 2.78 2 4 v 1 h 5 v -1 c 0.22
+           -1.22 0.66 -1.75 2 -4 c 0.45 -0.75 1 -2.08 1 -3 c 0 -2.81 -2.48 -5 -5.5 -5 Z m 3.64 7.48 c -0.25 0.44 -0.47 0.8 -0.67 1.11 c
+            -0.86 1.41 -1.25 2.06 -1.45 3.23 c -0.02 0.05 -0.02 0.11 -0.02 0.17 H 5 c 0 -0.06 0 -0.13 -0.02 -0.17 c -0.2 -1.17 -0.59 -1.83
+             -1.45 -3.23 c -0.2 -0.31 -0.42 -0.67 -0.67 -1.11 C 2.44 6.78 2 5.65 2 5 c 0 -2.2 2.02 -4 4.5 -4 c 1.22 0 2.36 0.42 3.22 1.19
+              C 10.55 2.94 11 3.94 11 5 c 0 0.66 -0.44 1.78 -0.86 2.48 Z M 4 14 h 5 c -0.23 1.14 -1.3 2 -2.5 2 s -2.27 -0.86 -2.5 -2 Z"></path>
+        </svg>
+        <strong>ProTip!</strong>
+        Find everything you created by searching
+        <a href="#"> author</a>
+      </div>
+    </div>
+  </div>
+</div>

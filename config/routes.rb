@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :users
+
+  root to: "home_page#index"
+
   get '/pull_requests', to: 'pull_requests#index'
   get '/pulse', to: 'insights#pulse'
   get '/contributors', to: 'insights#contributors'

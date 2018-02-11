@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
-  def index
-    @users = User.all
+  def show
+    @user = User.find(params[:id])
   end
 
   def new
@@ -9,11 +9,12 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
-
     if @user.save
-      redirect_to @user, notice: 'User was successfully created'
+      log_in @user
+      flash[:success] = "Welcome to the GitClub"
+      redirect_to @user
     else
-      redirect_to new_user_path, alert: 'Password or login incorrect'
+      render 'new'
     end
   end
 
@@ -21,10 +22,6 @@ class UsersController < ApplicationController
   end
 
   def update
-  end
-
-  def show
-    @user = User.find(params[:id])
   end
 
   def destroy

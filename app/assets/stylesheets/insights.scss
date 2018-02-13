@@ -84,7 +84,7 @@ ol ul, ul ol, ul ul, ol ol {
 }
 
 a {
-  color: #0366d6;
+  color: #000;
   text-decoration: none;
 }
 
@@ -93,7 +93,6 @@ a {
 }
 
 a:-webkit-any-link {
-  color: -webkit-link;
   cursor: pointer;
   text-decoration: none;
 }

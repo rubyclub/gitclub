@@ -1,8 +1,5 @@
 Rails.application.routes.draw do
-  resources :users
-
   root to: "home_page#index"
-
   get '/pull_requests', to: 'pull_requests#index'
   get '/pulse', to: 'insights#pulse'
   get '/contributors', to: 'insights#contributors'
@@ -13,4 +10,10 @@ Rails.application.routes.draw do
   get '/dependency_graph', to: 'insights#dependency_graph'
   get '/network', to: 'insights#network'
   get '/forks', to: 'insights#forks'
+  get '/signup', to: 'users#new'
+  post '/signup', to: 'users#create'
+  get '/login', to:'sessions#new'
+  post '/login', to:'sessions#create'
+  delete '/logout', to:'sessions#destroy'
+  resources :users
 end

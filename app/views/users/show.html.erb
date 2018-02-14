@@ -1,6 +1,110 @@
-<h1>
-  <%= gravatar_for @user %>
-  User name: <%= @user.name %>
-  <p>Use email: <%= @user.email %> </p>
-  <p>show</p>
-</h1>
+<div class="container show-activity">
+  <div class="row">
+    <div class="col-md-8">
+      <ul class="dashboard">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="padding-top: 5px">
+            <strong>
+              <%= gravatar_for @user %> <%= current_user.name%><b class="caret"></b>
+            </strong>
+          </a>
+          <ul class="dropdown-menu">
+            <li>Switch dashboard context</li>
+            <li><%= current_user.name%></li>
+            <li>Manage organizations</li>
+            <li>Create organization</li>
+          </ul>
+        </li>
+      </ul>
+      <div class="activity-and-repo">
+        <ul class="browse-activity">
+          <li>Browse activity</li>
+          <li>Discover repositories</li>
+        </ul>
+      </div>
+      <div class="user-activity">
+        <div class="user-activities">
+          <%= gravatar_for @user %>
+          <strong>kavalenka</strong> pushed to master in <strong>ruby/gitclub</strong>
+          <div class="user-activity-date">
+            4 days ago
+          </div>
+        </div>
+        <div class="user-activities">
+          <%= gravatar_for @user %>
+          <strong>kavalenka</strong> pushed to master in <strong>ruby/gitclub</strong>
+          <div class="user-activity-date">
+            5 days ago
+          </div>
+        </div>
+        <div class="user-activities">
+          <%= gravatar_for @user %>
+          <strong>kavalenka</strong> pushed to master in <strong>ruby/gitclub</strong>
+          <div class="user-activity-date">
+            6 days ago
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="intro-team">
+        <h3>Introducing team discussions</h3>
+        <p>
+          Why comment when you can discuss?
+          Now there's more space to talk through your projects with team discussions.
+        </p>
+      </div>
+      <p style="float: right; color: #032f62">View 3 new broadcats</p>
+      <div class="contribute-repos">
+        <div class="side-bar-heads">
+          Repositories you contribute to:
+        </div>
+        <div class="list-li-repos">
+          <p>1</p>
+          <p>2</p>
+        </div>
+      </div>
+      <div class="your-repos">
+        <div class="side-bar-heads">
+          Your repositories: <button style="float: right">New repository</button>
+        </div>
+        <div class="search-form-repo">
+          <form accept-charset="UTF-8" action="#" class="subnav-search" data-pjax="true" method="get">
+            <input aria-label="Search a repository" class="form-control" data-hotkey="/"
+                   name="q" placeholder="Find a repository..." type="text" value="">
+          </form>
+        </div>
+        <div class="search-form-repo2">
+          <ul class="your-repos-category">
+            <li>All</li>
+            <li>Public</li>
+            <li>Private</li>
+            <li>Sources</li>
+            <li>Forks</li>
+          </ul>
+        </div>
+        <div class="list-li-repos">
+          <p>Repo #1</p>
+          <p>Repo #2</p>
+          <p>Repo #3</p>
+          <p>Repo #4</p>
+        </div>
+        <div class="side-bar-loadmore">
+          <%= link_to "Load more...", '#' %>
+        </div>
+      </div>
+      <div class="your-repos">
+        <div class="side-bar-heads">
+          Your teams:
+        </div>
+        <div class="search-form-repo" style="border-bottom: 1px solid #dfe2e5">
+          <form accept-charset="UTF-8" action="#" class="subnav-search" data-pjax="true" method="get">
+            <input aria-label="Search a team" class="form-control" data-hotkey="/"
+                   name="q" placeholder="Find a team..." type="text" value="">
+          </form>
+        </div>
+        <p style="padding-left: 50px">You don't belong to any team yet!</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,17 +1,21 @@
-<h1>Sign in to GitClub</h1>
-<div class="row">
-  <div class="col-md-6 col-md-offset-3">
-    <%= form_for(:session, url: login_path) do |f| %>
+<div class="login-container">
+  <div class="icon-login"><%= link_to("", root_path) %></div>
+  <p class="sign-in-text">Sign in to GitClub</p>
+  <div class="sign-in-form">
+    <div class="row sign-in-form-inside">
+      <%= form_for(:session, url: login_path) do |f| %>
 
-      <%= f.label :email %>
-      <%= f.email_field :email, class: 'form-control' %>
+        <%= f.label :email %>
+        <%= f.email_field :email, class: 'form-control' %>
 
-      <%= f.label :password %>
-      <%= f.password_field :password, class: 'form-control' %>
+        <%= f.label :password %>
+        <%= f.password_field :password, class: 'form-control' %>
 
-      <%= f.submit "Sign in", class: "btn btn-primary" %>
-    <% end %>
-
-    <p>New user? <%= link_to "Create an account", signup_path %></p>
+        <%= f.submit "Sign in", class: "btn btn-primary" %>
+      <% end %>
+    </div>
+  </div>
+  <div class="new-user-text">
+    <p>New user? <%= link_to "Create an account.", signup_path %></p>
   </div>
 </div>

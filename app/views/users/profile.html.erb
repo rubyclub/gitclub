@@ -1,0 +1,95 @@
+<div class="container show-activity">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="user-photo">
+      </div>
+      <div class="user-name">
+        User name
+      </div>
+      <div class="user-nickname">
+        <%= current_user.name %>
+      </div>
+      <div class="user-description">
+        Description
+      </div>
+      <div class="user-email">
+        <%= current_user.email %>
+      </div>
+      <div>
+        <strong>Organizations</strong>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <div class="user-info-block">
+        <ul class="user-info">
+          <li><%= link_to "Overview", '#' %></li>
+          <li><%= link_to "Repositories", '#' %></li>
+          <li><%= link_to "Stars", '#' %></li>
+          <li><%= link_to "Followers", '#' %></li>
+          <li><%= link_to "Following", '#' %></li>
+        </ul>
+      </div>
+      <div class="popular-repo-head">
+        <span style="font-size: 20px">Popular repositories</span>
+        <span style="float: right">
+          <div class="custom-repo-link">
+            <%= link_to "Customize your pinned repositories", '#' %>
+          </div>
+        </span>
+      </div>
+      <div class="pop-repo-item" style="float: left">
+        <span style="font-weight: bold"><%= link_to "Repo 1", '#' %></span>
+        <p class="repo-comment">Comment</p>
+        <p class="repo-lang">Language</p>
+      </div>
+      <div class="pop-repo-item" style="float: right;">
+        <span style="font-weight: bold"><%= link_to "Repo 2", '#' %></span>
+        <p class="repo-comment">Comment</p>
+        <p class="repo-lang">Language</p>
+      </div>
+      <div class="pop-repo-item" style="float: left">
+        <span style="font-weight: bold"><%= link_to "Repo 3", '#' %></span>
+        <p class="repo-comment">Comment</p>
+        <p class="repo-lang">Language</p>
+      </div>
+      <div class="pop-repo-item" style="float: right;">
+        <span style="font-weight: bold"><%= link_to "Repo 4", '#' %></span>
+        <p class="repo-comment">Comment</p>
+        <p class="repo-lang">Language</p>
+      </div>
+      <div class="pop-repo-item" style="float: left">
+        <span style="font-weight: bold"><%= link_to "Repo 5", '#' %></span>
+        <p class="repo-comment">Comment</p>
+        <p class="repo-lang">Language</p>
+      </div>
+      <div class="pop-repo-item" style="float: right;">
+        <span style="font-weight: bold"><%= link_to "Repo 6", '#' %></span>
+        <p class="repo-comment">Comment</p>
+        <p class="repo-lang">Language</p>
+      </div>
+      <div class="popular-repo-head">
+        <span style="font-size: 18px">? contributions the last year</span>
+        <span style="float: right">
+        <ul class="contrib-settings">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="padding-top: 5px">
+               Contribution settings
+            </a>
+            <ul class="dropdown-menu">
+              <li class="contrib-settings-head">Select which contribution to show</li>
+              <li class="contrib-settings-status">Public contributions only</li>
+              <li class="contrib-settings-text">Visitors to your profile will only see your contributions to public repositories.</li>
+              <li class="divider"></li>
+              <li class="contrib-settings-status">Public and private contributions</li>
+              <li class="contrib-settings-text">Visitors to your profile will see yur public and anonymized private contributions.</li>
+            </ul>
+          </li>
+        </ul>
+        </span>
+      </div>
+      <div class="calendar-box">
+        calendar
+      </div>
+    </div>
+  </div>
+</div>

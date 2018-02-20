@@ -1,39 +1,91 @@
-<h1>Join GitClub</h1>
-<h3>The best way to design, build, and ship software.</h3>
-<p> Step 1:      Step 2:       Step 3:</p>
-<h2>Create your personal account</h2>
-<div class="input-form-inner">
-  <%= form_tag controller: "users", action: "new" do %>
-    <% if flash[:alert].present? %>
-      <p class="alert alert-danger"><%= flash[:alert] %></p>
-    <% end %>
+<div class="container">
+  <div class="sign-in-page">
+    <div class="join-gitclub-head">
+      <h1>Join GitClub</h1>
+      <p class="lead">The best way to design, build, and ship software.</p>
+    </div>
+    <div class="steps-block">
+      <div class="steps">
+        <strong>Step 1:</strong>
+        <p>Create personal account</p>
+      </div>
+      <div class="steps">
+        <strong>Step 2:</strong>
+        <p>Choose your plan</p>
+      </div>
+      <div class="steps">
+        <strong>Step 3:</strong>
+        <p>Tailor your experience</p>
+      </div>
+    </div>
+    <div class="row personal-account">
+      <div class="col-md-6">
+        <h2>Create your personal account</h2>
+        <%= form_tag controller: "users", action: "new" do %>
+          <% if flash[:alert].present? %>
+            <p class="alert alert-danger"><%= flash[:alert] %></p>
+          <% end %>
+          <div class="sign-in-table">
+            <div class="table-row">
+              <div class="table-cell name"><%= label_tag 'Username' %></div>
+            </div>
+            <div class="table-row">
+              <div class="table-cell2"><%= text_field_tag :name %></div>
+            </div>
 
-    <div class="table-row">
-      <div class="table-cell name"><%= label_tag 'Username' %></div>
-    </div>
-    <div class="table-row">
-      <div class="table-cell"><%= text_field_tag :name %></div>
-    </div>
+            <div class="table-row">
+              <div class="table-cell name"><%= label_tag 'Email' %></div>
+            </div>
+            <div class="table-row">
+              <div class="table-cell2"><%= email_field_tag :email %></div>
+            </div>
 
-    <div class="table-row">
-      <div class="table-cell name"><%= label_tag 'Email' %></div>
+            <div class="table-row">
+              <div class="table-cell name"><%= label_tag 'Password' %></div>
+            </div>
+            <div class="table-row">
+              <div class="table-cell2"><%= password_field_tag :password %></div>
+            </div>
+          </div>
+          <div class="join-gitclub-info">
+            <p>By clicking on "Create an account" below, your are agreeing
+              to the <%= link_to "Terms of Service", '#' %> and the
+              <%= link_to "Privacy Policy", '#' %> </p>
+          </div>
+          <div class="table-row">
+            <div class="table-cell2"><%= submit_tag 'Create an account', class: 'btn btn-primary' %></div>
+          </div>
+        <% end %>
+      </div>
+      <div class="col-md-4">
+        <div class="love-gitclub-table">
+          <h4><strong>You'll love GitClub</strong></h4>
+        </div>
+        <div class="love-gitclub-table">
+          <p><strong>Unlimited</strong> collaborators</p>
+          <p><strong>Unlimited</strong> public repositories</p>
+        </div>
+        <div class="love-gitclub-table">
+          <p>
+            <svg aria-hidden="true" class="octicon octicon-check" height="16" version="1.1" viewBox="0 0 12 16" width="12">
+              <path fill-rule="evenodd" d="M 12 5 l -8 8 l -4 -4 l 1.5 -1.5 L 4 10 l 6.5 -6.5 Z"></path>
+            </svg>
+            Great communication
+          </p>
+          <p>
+            <svg aria-hidden="true" class="octicon octicon-check" height="16" version="1.1" viewBox="0 0 12 16" width="12">
+              <path fill-rule="evenodd" d="M 12 5 l -8 8 l -4 -4 l 1.5 -1.5 L 4 10 l 6.5 -6.5 Z"></path>
+            </svg>
+            Frictionless development
+          </p>
+          <p>
+            <svg aria-hidden="true" class="octicon octicon-check" height="16" version="1.1" viewBox="0 0 12 16" width="12">
+              <path fill-rule="evenodd" d="M 12 5 l -8 8 l -4 -4 l 1.5 -1.5 L 4 10 l 6.5 -6.5 Z"></path>
+            </svg>
+            Open source community
+          </p>
+        </div>
+      </div>
     </div>
-    <div class="table-row">
-      <div class="table-cell"><%= email_field_tag :email %></div>
-    </div>
-
-    <div class="table-row">
-      <div class="table-cell name"><%= label_tag 'Password' %></div>
-    </div>
-    <div class="table-row">
-      <div class="table-cell"><%= password_field_tag :password %></div>
-    </div>
-
-    <p>By clicking on "Create an account" below, your are agreeing
-      to the Terms of Service and the Privacy Policy </p>
-
-    <div class="table-row">
-      <div class="table-cell"><%= submit_tag 'Create an account', class: 'btn btn-primary' %></div>
-    </div>
-  <% end %>
+  </div>
 </div>

@@ -1,36 +1,57 @@
 <div class="top">
   <div id="central-block">
-    <div class="icon"><%= link_to("", root_path) %></div>
-    <div class="menu-links"><%= link_to("Features", "#") %></div>
-    <div class="menu-links"><%= link_to("Business", "#") %></div>
-    <div class="menu-links"><%= link_to("Explore", "#") %></div>
-    <div class="menu-links"><%= link_to("Marketplace", "#") %></div>
-    <div class="menu-links"><%= link_to("Pricing", "#") %></div>
-    <div class="input-or-regist">
-      <% if logged_in? %>
-      <ul>
-        <li class="dropdown" >
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-            Account <b class="caret"></b>
-          </a>
-          <ul class="dropdown-menu">
-            <li>Signed in</li>
-            <li class="divider"></li>
-            <li><%= link_to "Your profile", current_user %></li>
-            <li><%= link_to "Your stars", '#' %></li>
-            <li><%= link_to "Your Gist", '#' %></li>
-            <li class="divider"></li>
-            <li><%= link_to "Help", '#' %></li>
-            <li><%= link_to "Settings", '#' %></li>
-            <li><%= link_to "Sign out", logout_path, method: :delete %></li>
-          </ul>
-        </li>
-      </ul>
-      <% else %>
+    <% if logged_in? %>
+      <div class="icon"><%= link_to("", current_user) %></div>
+      <form accept-charset="UTF-8" action="#" class="subnav-search float-left search-form-login" data-pjax="true" method="get">
+        <div style="margin: 0; padding: 0; display: inline;">
+          <input name="utf8" type="hidden" value="+">
+        </div>
+        <input aria-label="Search all issues" class="form-control search-form-inside" data-hotkey="/"
+               name="q" placeholder="Search GitClub" type="text" value="">
+      </form>
+      <div class="menu-links"><%= link_to("Pull requests", "#") %></div>
+      <div class="menu-links"><%= link_to("Issues", "#") %></div>
+      <div class="menu-links"><%= link_to("Marketplace", "#") %></div>
+      <div class="menu-links"><%= link_to("Explore", "#") %></div>
+      <div class="input-or-regist">
+        <ul class="account-button">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <%= gravatar_for @user %><b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu account-menu">
+              <li>Signed in as <%= current_user.name %></li>
+              <li class="divider"> </li>
+              <li><%= link_to "Your profile", profile_path %></li>
+              <li><%= link_to "Your stars", '#' %></li>
+              <li><%= link_to "Your gists", '#' %></li>
+              <li class="divider"> </li>
+              <li><%= link_to "Help", '#' %></li>
+              <li><%= link_to "Settings", '#' %></li>
+              <li><%= link_to "Sign out", logout_path, method: :delete %></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    <% else %>
+      <div class="icon"><%= link_to("", root_path) %></div>
+      <div class="menu-links"><%= link_to("Features", "#") %></div>
+      <div class="menu-links"><%= link_to("Business", "#") %></div>
+      <div class="menu-links"><%= link_to("Explore", "#") %></div>
+      <div class="menu-links"><%= link_to("Marketplace", "#") %></div>
+      <div class="menu-links"><%= link_to("Pricing", "#") %></div>
+      <form accept-charset="UTF-8" action="#" class="subnav-search float-left search-form" data-pjax="true" method="get">
+        <div style="margin: 0; padding: 0; display: inline;">
+          <input name="utf8" type="hidden" value="+">
+        </div>
+        <input aria-label="Search all issues" class="form-control search-form-inside" data-hotkey="/"
+               name="q" placeholder="Search GitClub" type="text" value="">
+      </form>
+      <div class="input-or-regist">
         <div class="menu-links"><%= link_to("Sing In", login_path) %></div>
         <div class="menu-links color-gray">or</div>
         <div class="menu-links"><%= link_to("Sing Up", signup_path) %></div>
-      <% end %>
-    </div>
+      </div>
+    <% end %>
   </div>
 </div>

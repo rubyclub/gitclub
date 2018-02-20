@@ -22,3 +22,447 @@ input {
   }
 }
 
+.account-button {
+  padding-top: 25px;
+  position: relative;
+  a {
+    color: #fff;
+  }
+}
+
+.account-menu {
+  a {
+    color: #000000;
+  }
+  li {
+    width: 150px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    position: relative;
+  }
+}
+
+.divider {
+  border-top: 1px solid #dfe2e5;
+}
+
+.search-form {
+  padding-top: 20px;
+  padding-right: 15px;
+  padding-left: 100px;
+}
+
+.search-form-login {
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+
+.search-form-inside {
+  background-color: #444d56;
+  border: none;
+}
+
+.login-container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+
+}
+
+.sign-in-text {
+  display: block;
+  font-size: 25px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.sign-in-form {
+  border: 1px solid #dfe2e5;
+  border-radius: 5px;
+}
+
+.sign-in-form-inside {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  width: 260px;
+  .btn {
+    width: 260px !important;
+  }
+}
+
+.new-user-text {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #dfe2e5;
+  border-radius: 5px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.lead {
+  color: #586069;
+}
+
+.join-gitclub-head {
+  margin-top: 30px;
+}
+
+.sign-in-page {
+  margin-left: 80px;
+}
+
+.steps-block {
+  display: inline-block;
+
+}
+
+.steps {
+  display: inline-block;
+  border: 1px solid #dfe2e5;
+  border-radius: 2px;
+  width: 250px;
+  height: 60px;
+  padding-left: 20px;
+}
+
+.table-row {
+  display: block;
+}
+
+.join-gitclub-info {
+  display: block;
+  width: 450px;
+  border-top: 1px solid #dfe2e5;
+  border-bottom: 1px solid #dfe2e5;
+  margin-bottom: 15px;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.love-gitclub-table {
+  display: block;
+  border: 1px solid #dfe2e5;
+  border-radius: 3px;
+  width: 250px;
+  margin-left: 60px;
+  padding-left: 15px;
+}
+
+.love-gitclub-table2 {
+  display: block;
+  border-right: 1px solid #dfe2e5;
+  border-left: 1px solid #dfe2e5;
+  width: 250px;
+  margin-left: 66px;
+  padding-left: 15px;
+}
+
+.personal-account {
+  margin-top: 40px;
+}
+
+
+.table-cell2 input {
+  border-radius: 5px;
+  font-size: 1em;
+  height: 20px;
+  width: 450px;
+  padding: 10px;
+  color: #586069;
+  font-weight: 400;
+
+}
+
+.table-cell2 {
+  .btn {
+    width: 150px !important;
+  }
+}
+
+.table-cell.name {
+  padding-bottom: 2px !important;
+  padding-left: 5px !important;
+}
+
+.octicon-check {
+  margin-right: 5px;
+  color: #60b044;
+}
+
+.intro-team {
+  display: block;
+  width: inherit;
+  border: 1px solid #0366d6;
+  border-radius: 3px;
+  padding-left: 10px;
+}
+
+.show-activity {
+  padding-top: 20px;
+  max-width: 1000px;
+}
+
+.contribute-repos {
+  display: block;
+  width: inherit;
+  border: 1px solid #dfe2e5;
+  border-radius: 3px;
+  margin-top: 40px;
+}
+
+.your-repos {
+  width: inherit;
+  border: 1px solid #dfe2e5;
+  border-radius: 3px;
+  margin-top: 20px;
+}
+
+.your-repos-category {
+  display: inline-block;
+  list-style: none;
+  li {
+    display: inline-block;
+    padding-left: 15px;
+  }
+}
+
+.dashboard {
+  display: block;
+  border: 1px solid #dfe2e5;
+  border-radius: 3px;
+  list-style: none;
+  width: 150px;
+  height: 35px;
+  background-color: #f6f8fa;
+  text-align: center;
+  a {
+    color: black;
+  }
+  li {
+    padding-left: 5px;
+    padding-top: 5px;
+  }
+}
+
+.browse-activity {
+  border-bottom: 1px solid #dfe2e5;
+  display: inline-block;
+  list-style: none;
+  width: inherit;
+  padding-bottom: 10px;
+  li {
+    display: inline-block;
+    padding-left: 15px;
+  }
+}
+
+.activity-and-repo {
+  margin-top: 20px;
+  width: inherit;
+}
+
+.user-activity {
+  display: inline-block;
+  margin-top: 30px;
+  width: inherit;
+}
+
+.user-activity-date {
+  float: right;
+  color: #586069;
+  font-size: 12px;
+}
+
+.user-activities {
+  border-bottom: 1px solid #dfe2e5;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.side-bar-heads {
+  border-bottom: 1px solid #dfe2e5;
+  background-color: #f6f8fa;
+  width: inherit;
+  height: 40px;
+  text-align: left;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-weight: bold;
+  button {
+    color: #dfe2e5;
+    background-color: #28a745;
+    border: 1px solid #28a745;
+    border-radius: 3px;
+    margin-right: 10px;
+    position: inherit;
+    font-size: 12px;
+  }
+}
+
+.side-bar-loadmore {
+  border-top: 1px solid #dfe2e5;
+  background-color: #f6f8fa;
+  width: inherit;
+  height: 40px;
+  text-align: center;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+.search-form-repo {
+  padding-top: 10px;
+  padding-bottom: 1px;
+  padding-right: 10px;
+  width: inherit;
+  background-color: #f6f8fa;
+  display: block;
+  input {
+    font-size: 12px;
+  }
+}
+
+.search-form-repo2 {
+  background-color: #f6f8fa;
+  border-bottom: 1px solid #dfe2e5;
+  padding-bottom: 5px;
+}
+
+.list-li-repos {
+  padding-left: 10px;
+}
+
+.user-photo {
+  width: inherit;
+  height: 250px;
+  background-color: #586069;
+  border-radius: 7px;
+}
+
+.user-name {
+  font-size: 35px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.user-nickname {
+  font-size: 19px;
+  color: #586069;
+}
+
+.user-description {
+  font-size: 13px;
+  color: #586069;
+  margin-top: 15px;
+}
+
+.user-email {
+  border-top: 1px solid #dfe2e5;
+  border-bottom: 1px solid #dfe2e5;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #0366d6;
+}
+
+.user-info {
+  display: inline-block;
+  list-style: none;
+  li {
+    display: inline-block;
+    padding-right: 55px;
+    padding-bottom: 15px;
+    a {
+      color: #2b3137;
+    }
+  }
+}
+
+.user-info-block {
+  margin-top: 15px;
+  border-bottom: 1px solid #dfe2e5;
+  margin-bottom: 10px;
+}
+
+.popular-repo-head {
+  width: inherit;
+  display: inline-block;
+  padding-top: 10px;
+}
+
+.pop-repo-item {
+  display: block;
+  border: 1px solid #dfe2e5;
+  border-radius: 3px;
+  width: 313px;
+  height: 110px;
+  margin-bottom: 18px;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+.calendar-box {
+  margin-top: 5px;
+  display: block;
+  border: 1px solid #dfe2e5;
+  border-radius: 3px;
+  width: inherit;
+  height: 120px;
+}
+
+.repo-comment {
+  font-size: 12px;
+  color: #586069;
+}
+
+.repo-lang {
+  font-size: 12px;
+  color: #586069;
+}
+
+.custom-repo-link a {
+  color: #586069;
+}
+
+.contrib-settings {
+  list-style: none;
+  a {
+    color: #586069;
+    float: right;
+  }
+  li {
+    width: 300px;
+  }
+}
+
+.contrib-settings-head {
+  background-color: #f6f8fa;
+  padding-top: 10px !important;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dfe2e5;
+  font-size: 12px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.contrib-settings-status {
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.contrib-settings-text {
+  font-size: 12px;
+  padding-left: 20px;
+  padding-bottom: 5px;
+}

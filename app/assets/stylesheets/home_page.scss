@@ -33,10 +33,26 @@ body {
   }
 }
 
+.icon-login {
+  margin-top: 20px;
+  a {
+    border-radius: 60px;
+    border: 1px solid white;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    background: url('white-black.svg'), white;
+    background-position: left bottom;
+    background-size: 87%;
+    background-repeat: no-repeat;
+    width: 65px;
+    height: 65px;
+  }
+}
+
 .menu-links {
   float: left;
   padding-right: 25px;
-
   a {
     line-height: 72px;
     color: white;
@@ -105,4 +121,15 @@ body {
   div {
     padding-right: 5px;
   }
+}
+
+.gravatar {
+  height: 20px;
+  width: 20px;
+  transform: inherit;
+  border-radius: 4px;
+}
+
+.container {
+  max-width: 980px;
 }

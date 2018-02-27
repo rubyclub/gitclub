@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180212085956) do
+ActiveRecord::Schema.define(version: 20180223081051) do
 
   create_table "pull_requests", force: :cascade do |t|
     t.string "title"
@@ -19,6 +19,15 @@ ActiveRecord::Schema.define(version: 20180212085956) do
     t.string "review_status"
     t.string "pulse_status"
     t.datetime "updated_at", null: false
+  end
+
+  create_table "repositories", force: :cascade do |t|
+    t.string "title"
+    t.integer "repository_id"
+    t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id", "created_at"], name: "index_repositories_on_user_id_and_created_at"
   end
 
   create_table "users", force: :cascade do |t|

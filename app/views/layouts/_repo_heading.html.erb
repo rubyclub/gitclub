@@ -1,0 +1,19 @@
+<div class="repo-heading">
+  <div class="container">
+    <div class="name-of-repository">
+      <%= link_to current_user.name %> / <%= link_to "'name of repository'", "#" %>
+      <button class="float-right">Fork</button>
+      <button class="float-right">Star</button>
+      <button class="float-right">Watch</button>
+    </div>
+    <ul class="repository-tabs">
+      <li><%= link_to "Code", repository_path %></li>
+      <li><%= link_to "Issues", issues_path %></li>
+      <li><%= link_to "Pull requests", pull_requests_path %></li>
+      <li><%= link_to "Projects", "#" %></li>
+      <li><%= link_to "Wiki", "#" %></li>
+      <li><%= link_to "Insights", pulse_path %></li>
+      <li><%= link_to "Settings", "#" %></li>
+    </ul>
+  </div>
+</div>

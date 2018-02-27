@@ -1,0 +1,52 @@
+<%= render partial: 'layouts/repo_heading' %>
+<div class="container">
+  <div class="code-description">
+    <span class="repo-description">No description, website, or topics provided</span>
+    <button class="float-right">Edit</button>
+    <p style="font-size:11px; color: #0366d6 ">Add topics</p>
+  </div>
+  <div class="repo-info">
+    <ul class="repo-info-2">
+      <li>? commits</li>
+      <li>? branch</li>
+      <li>? releases</li>
+      <li>? contributor</li>
+    </ul>
+  </div>
+  <div class="colorful-line"></div>
+  <div class="repo-management">
+    <button class="float-left" style="margin-right: 5px">Branch: master</button>
+    <button class="float-left">New pull request</button>
+    <button class="float-right btn-green">Clone or download</button>
+    <button class="float-right">Create new file</button>
+    <button class="float-right">Upload files</button>
+    <button class="float-right">Find file</button>
+  </div>
+  <div class="last-commit-heading">
+    <%= link_to current_user.name %> "info about last commit"
+    <span class="float-right">date of "last" commit</span>
+  </div>
+  <div class="repository-files">
+    <p>
+      README.md
+      <span style="padding-left:300px ">first commit</span>
+      <span class="float-right">1 day ago</span>
+    </p>
+    <p>
+      bundler.rb
+      <span style="padding-left:300px ">second commit</span>
+      <span class="float-right">1 day ago</span>
+    </p>
+    <p>
+      rails.rb
+      <span style="padding-left:300px ">third commit</span>
+      <span class="float-right">1 day ago</span>
+    </p>
+  </div>
+  <div class="readme-heading">
+    README.md
+  </div>
+  <div class="readme-textbox">
+    text
+  </div>
+</div>

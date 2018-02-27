@@ -1,0 +1,14 @@
+<div class="login-container">
+  <div class="icon-login"><%= link_to("", root_path) %></div>
+  <p class="sign-in-text">Reset your password</p>
+  <div class="sign-in-form">
+    <div class="row sign-in-form-inside">
+      <%= form_for(:password_reset, url: password_resets_path) do |f| %>
+        <%= f.label "Enter your email address and will send you a link to reset your password."  %>
+        <%= f.email_field :email, class: 'form-control' %>
+
+        <%= f.submit "Send password reset email", class: "btn btn-primary"%>
+      <% end %>
+    </div>
+  </div>
+</div>

@@ -1,34 +1,19 @@
 <div class="input-form">
   <div class="input-form-inner">
-    <%= form_tag controller: "users", action: "create" do %>
-      <% if flash[:alert].present? %>
-        <p class="alert alert-danger"><%= flash[:alert] %></p>
-      <% end %>
+    <%= form_for(@user) do |f| %>
+      <%= render 'layouts/error_messages', object: @user %>
 
-      <div class="table-row">
-        <div class="table-cell name"><%= label_tag 'Username' %></div>
-      </div>
-      <div class="table-row">
-        <div class="table-cell"><%= text_field_tag :name %></div>
-      </div>
+      <%= f.label :Username %>
+      <%= f.text_field :name, class: 'form-control' %>
 
-      <div class="table-row">
-        <div class="table-cell name"><%= label_tag 'Email' %></div>
-      </div>
-      <div class="table-row">
-        <div class="table-cell"><%= email_field_tag :email %></div>
-      </div>
+      <%= f.label :Email %>
+      <%= f.email_field :email, class: 'form-control' %>
 
-      <div class="table-row">
-        <div class="table-cell name"><%= label_tag 'Password' %></div>
-      </div>
-      <div class="table-row">
-        <div class="table-cell"><%= password_field_tag :password %></div>
-      </div>
+      <%= f.label :Password %>
+      <%= f.password_field :password, class: 'form-control' %>
 
-      <div class="table-row">
-        <div class="table-cell"><%= submit_tag 'Sign up for GitClub', class: 'btn btn-primary' %></div>
-      </div>
+      <%= f.submit 'Sign up for GitClub', class: 'btn btn-primary' %>
+
     <% end %>
   </div>
 </div>

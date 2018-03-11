@@ -1,0 +1,47 @@
+<div class="container show-activity">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="user-photo">
+      </div>
+      <div class="user-name">
+        User name
+      </div>
+      <div class="user-nickname">
+        <%= current_user.name %>
+      </div>
+      <div class="user-description">
+        Description
+      </div>
+      <div class="user-email">
+        <%= current_user.email %>
+      </div>
+      <div>
+        <strong>Organizations</strong>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <div class="user-info-block">
+        <ul class="user-info">
+          <li><%= link_to "Overview", '/profile' %></li>
+          <li><%= link_to "Repositories", '/index' %></li>
+          <li><%= link_to "Stars", '#' %></li>
+          <li><%= link_to "Followers", '#' %></li>
+          <li><%= link_to "Following", '#' %></li>
+        </ul>
+      </div>
+      <div class="new-button">
+        <button style="float: right"><%= link_to("New", '/repositories/new' ) %></button>
+      </div>
+      <div>
+        <ul class="list-repositories">
+          <% @repositories.each do |repository| %>
+            <li>
+              <%= link_to repository.title, repository %>
+              <div class="repository-created-at"><%= time_ago_in_words(repository.created_at) %></div>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

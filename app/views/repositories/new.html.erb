@@ -1,0 +1,12 @@
+<div class="container new-repository">
+  <div class="repo-new-heading">Create a new repository</div>
+  <div class="repo-new-heading-comment">A repository contains all the fields for your project, including a revision history</div>
+  <div class="new-repo-form">
+    <%= form_for(@repository) do |f| %>
+      <%= f.label 'Repository name' %>
+      <%= f.text_field :title, class: 'form-control' %>
+      <div>Great repository names are short and memorable</div>
+      <%= f.submit "Create repository", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>

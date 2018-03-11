@@ -22,8 +22,8 @@
     <div class="col-md-8">
       <div class="user-info-block">
         <ul class="user-info">
-          <li><%= link_to "Overview", '#' %></li>
-          <li><%= link_to "Repositories", '#' %></li>
+          <li><%= link_to "Overview", '/profile' %></li>
+          <li><%= link_to "Repositories", '/index' %></li>
           <li><%= link_to "Stars", '#' %></li>
           <li><%= link_to "Followers", '#' %></li>
           <li><%= link_to "Following", '#' %></li>
@@ -37,36 +37,19 @@
           </div>
         </span>
       </div>
-      <div class="pop-repo-item" style="float: left">
-        <span style="font-weight: bold"><%= link_to "Repo 1", '#' %></span>
-        <p class="repo-comment">Comment</p>
-        <p class="repo-lang">Language</p>
-      </div>
-      <div class="pop-repo-item" style="float: right;">
-        <span style="font-weight: bold"><%= link_to "Repo 2", '#' %></span>
-        <p class="repo-comment">Comment</p>
-        <p class="repo-lang">Language</p>
-      </div>
-      <div class="pop-repo-item" style="float: left">
-        <span style="font-weight: bold"><%= link_to "Repo 3", '#' %></span>
-        <p class="repo-comment">Comment</p>
-        <p class="repo-lang">Language</p>
-      </div>
-      <div class="pop-repo-item" style="float: right;">
-        <span style="font-weight: bold"><%= link_to "Repo 4", '#' %></span>
-        <p class="repo-comment">Comment</p>
-        <p class="repo-lang">Language</p>
-      </div>
-      <div class="pop-repo-item" style="float: left">
-        <span style="font-weight: bold"><%= link_to "Repo 5", '#' %></span>
-        <p class="repo-comment">Comment</p>
-        <p class="repo-lang">Language</p>
-      </div>
-      <div class="pop-repo-item" style="float: right;">
-        <span style="font-weight: bold"><%= link_to "Repo 6", '#' %></span>
-        <p class="repo-comment">Comment</p>
-        <p class="repo-lang">Language</p>
-      </div>
+      <ul>
+        <% @repositories.limit(6).each do |repository| %>
+          <div class="pop-repo-item" style="float: left">
+            <span style="font-weight: bold">
+            <li>
+              <%= link_to repository.title, repository %>
+            </li>
+            </span>
+            <p class="repo-comment">Comment</p>
+            <p class="repo-lang">Language</p>
+          </div>
+        <% end %>
+      </ul>
       <div class="popular-repo-head">
         <span style="font-size: 18px">? contributions the last year</span>
         <span style="float: right">

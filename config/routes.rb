@@ -16,11 +16,13 @@ Rails.application.routes.draw do
   get '/login',            to: 'sessions#new'
   post '/login',           to: 'sessions#create'
   delete '/logout',        to: 'sessions#destroy'
-  get '/repository/new',   to: 'repository#new'
-  get '/repository',       to: 'repository#show'
   get '/issues',           to: 'issues#show'
   get '/edit',             to: 'users#edit'
   get '/activate',         to: 'account_activations#activate'
+  get '/new',              to: 'repositories#new'
+  post '/new',             to: 'repositories#create'
+  get '/index',            to: 'repositories#index'
+  resources :repositories
   resources :users
   resources :password_resets,     only: [:new, :create, :edit, :update]
 end

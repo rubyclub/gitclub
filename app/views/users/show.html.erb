@@ -66,7 +66,7 @@
       </div>
       <div class="your-repos">
         <div class="side-bar-heads">
-          Your repositories: <button style="float: right">New repository</button>
+          Your repositories: <button style="float: right"><%= link_to("New repository", '/repositories/new' ) %></button>
         </div>
         <div class="search-form-repo">
           <form accept-charset="UTF-8" action="#" class="subnav-search" data-pjax="true" method="get">
@@ -84,10 +84,13 @@
           </ul>
         </div>
         <div class="list-li-repos">
-          <p>Repo #1</p>
-          <p>Repo #2</p>
-          <p>Repo #3</p>
-          <p>Repo #4</p>
+          <ul>
+            <% @repositories.limit(6).each do |repository| %>
+            <li>
+              <%= link_to repository.title, repository %>
+            </li>
+            <% end %>
+          </ul>
         </div>
         <div class="side-bar-loadmore">
           <%= link_to "Load more...", '#' %>

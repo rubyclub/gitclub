@@ -334,6 +334,9 @@ input {
     position: inherit;
     font-size: 12px;
   }
+  a {
+    color: #dfe2e5;
+  }
 }
 
 .side-bar-loadmore {
@@ -366,7 +369,14 @@ input {
 }
 
 .list-li-repos {
-  padding-left: 10px;
+  li {
+    list-style: none;
+    padding-left: 10px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #dfe2e5;
+  }
 }
 
 .user-photo {
@@ -435,8 +445,12 @@ input {
   width: 313px;
   height: 110px;
   margin-bottom: 18px;
+  margin-left: 5px;
   padding-left: 15px;
   padding-top: 15px;
+  li {
+    list-style: none;
+  }
 }
 
 .calendar-box {

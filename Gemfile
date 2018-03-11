@@ -10,6 +10,7 @@ end
 gem 'rails', '~> 5.1.4'
 gem 'bootstrap-sass'
 gem 'will_paginate', '~> 3.1.0'
+gem 'faker',                   '1.7.3'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server
